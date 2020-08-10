@@ -45,7 +45,11 @@ body {
   }
 
   .nav.flex-column {
-  flex-direction: row !important;
+  flex-direction: row-reverse !important;
+  }
+
+  .nav {
+    display: inline-flex;
   }
 
 }
