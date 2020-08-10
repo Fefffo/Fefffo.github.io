@@ -37,6 +37,13 @@ body {
     width: 100%;
   }
 
+  #home {
+    text-decoration: none;
+    color: black;
+    font-size: 3rem !important;
+    font-family: 'SquadaOne', cursive;
+}
+
 }
 
 .nav-link {
@@ -74,7 +81,7 @@ img {
 
 h1 {
     font-family: 'SquadaOne', cursive;
-    font-size: 3rem;
+    font-size: 4rem;
     padding: .5rem 2rem;
     color: rgb(155, 155, 155);
 }
