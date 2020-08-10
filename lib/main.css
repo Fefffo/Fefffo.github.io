@@ -42,11 +42,11 @@ body {
     color: black;
     font-size: 3rem !important;
     font-family: 'SquadaOne', cursive;
-}
+  }
 
-.nav.flex-column {
+  .nav.flex-column {
   flex-direction: row !important;
-}
+  }
 
 }
 
