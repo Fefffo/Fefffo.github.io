@@ -44,6 +44,10 @@ body {
     font-family: 'SquadaOne', cursive;
 }
 
+.nav.flex-column {
+  flex-direction: row !important;
+}
+
 }
 
 .nav-link {
