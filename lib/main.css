@@ -36,6 +36,7 @@ body {
     float: left;
     width: 100%;
   }
+
 }
 
 .nav-link {
@@ -73,7 +74,7 @@ img {
 
 h1 {
     font-family: 'SquadaOne', cursive;
-    font-size: 4rem;
+    font-size: 3rem;
     padding: .5rem 2rem;
     color: rgb(155, 155, 155);
 }
