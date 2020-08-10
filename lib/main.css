@@ -52,6 +52,10 @@ body {
     display: inline-flex;
   }
 
+  a.nav-link {
+    padding: 8px;
+  }
+
 }
 
 .nav-link {
