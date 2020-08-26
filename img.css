@@ -1,0 +1,19 @@
+/* html, body {
+    height: 100%;
+    margin: 0;
+}
+  
+.full-height {
+    height: 100%;
+} */
+
+.zoom2 {
+    transition: transform .1s; /* Animation */
+    margin: 0 auto;
+    z-index: 1;
+  }
+  
+  .zoom2:hover {
+    transform: scale(1.6); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  z-index: 1;
+  }

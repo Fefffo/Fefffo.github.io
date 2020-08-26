@@ -8,19 +8,47 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="lib/main.css">
-  <link rel="stylesheet" href="lib/style2.css">
+  <link rel="stylesheet" href="main.css">
+  <!-- <link rel="stylesheet" href="lib/style2.css"> -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/profile/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/profile/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/profile/favicon_io/favicon-16x16.png">
   </style>
   <title>Henrik Kállai</title>
 </head>
 
 <body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="paintings.html">Paintings</a>
+    <a href="drawings.html">Drawings</a>
+    <div class="dropdown">
+      <button class="dropbtn">Dropdown
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+
   <div class="container-fluid">
-    <h1><a id="home" href="index.html">HENRIK KÁLLAI</a></h1>
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-sm-12 col-md-6" id="name">
+        <a id="home" href="index.html">HENRIK KÁLLAI</a>
+      </div>
+    </div>
     <!-- <p>Resize the browser window to see the effect.</p>
         <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p> -->
     <div class="row">
       <div class="col-sm-12 col-md-3">
+        <a id="home1" href="index.html">HENRIK KÁLLAI</a>
         <!-- A vertical navbar -->
 
 
@@ -44,12 +72,32 @@
         </ul>
 
       </div>
-      <div class="col-sm-12 col-md-9 imgmain">
-        <div id="pp" class="imgmain"><img class="img-fluid" src="images/profile/IMG_20190506_081409.jpg" alt=""></div>
+      <div class="col-sm-12 col-md-6 imgmain">
+        <div id="pp" class="imgmain">
+          <picture class="img-fluid">
+            <source srcset="images/profile/IMG_20190506_081409.jpg" media="(max-width: 768px)">
+            <source srcset="images/profile/henrikkallai4.jpg">
+            <img class="img-fluid" src="images/profile/henrikkallai4.jpg" alt="Henrik Kallai">
+        </div>
+        </picture>
       </div>
+      <div class="col-md-3"></div>
     </div>
 
-    <!-- <script>
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+  <!-- <script>
         function shadow(box) {
           img-fluid.style.box-shadow = "10px";
         }
@@ -58,7 +106,9 @@
           img.s.tyle.box-shadow = "box-shadow: 3px 3px 1px #aaaaaa";
         }
         </script> -->
-        <footer>@ Henrik Kállai 2020 - All rights reserved. - Designed by fefffo</footer>
+  <footer>
+    <div id="jumbotron jumbotron-fluid">@ Henrik Kállai 2020 - All rights reserved. - Designed by fefffo</div>
+  </footer>
 </body>
 
 </html>

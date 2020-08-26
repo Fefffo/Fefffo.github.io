@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="main2.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/profile/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/profile/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/profile/favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Henrik Kállai artist</title>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="topnav" id="myTopnav">
+        <a href="index2.html" class="active">Home</a>
+        <a href="paintings.html">Paintings</a>
+        <a href="drawings.html">Drawings</a>
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Red and black</a>
+                <a href="#">Visions</a>
+                <a href="#">Fates</a>
+            </div>
+        </div>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 col-md-3 col-lg-3">
+            <a id="home1" href="index2.html">HENRIK KÁLLAI</a>
+            <!-- A vertical navbar -->
+            <!-- Links -->
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="index2.html">Home</a>
+                </li>
+                <div class="dropdown dropright">
+                    <button type="button" class="dropbtn" data-toggle="dropdown">
+                      Paintings<i class="fa fa-caret-right"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item nav-link" href="redandblack.html">Red and black</a>
+                      <a class="dropdown-item nav-link" href="#">Visions</a>
+                      <a class="dropdown-item nav-link" href="#">Fates</a>
+                    </div>
+                  </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="drawings.html">Drawings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <div class="socbuttons">
+                <button class="social">
+                    <a href="https://www.instagram.com/henrikkallai" style="color:black;" target="_blank">
+                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                </a>
+                </button>
+                <button class="social">
+                    <a href="https://www.facebook.com/henrik.kallai.3" style="color:black;" target="_blank">
+                        <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                    </a>
+                </button>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-9 col-lg-6 imgmain">
+            <div id="pp" class="imgmain">
+                <picture class="img-fluid">
+                    <source srcset="images/profile/IMG_20190506_081409.jpg" media="(max-width: 768px)">
+                    <source srcset="images/profile/henrikkallai4.jpg">
+                    <img class="img-fluid" src="images/profile/henrikkallai4.jpg" alt="Henrik Kallai">
+                </picture>
+            </div>
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem
+                    ipsum dolor sit. Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing
+                    diam donec adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue. Elit
+                    at imperdiet dui accumsan sit. Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh
+                    praesent. In hac habitasse platea dictumst quisque sagittis purus. Pulvinar elementum integer enim
+                    neque volutpat ac. </p>
+                <p>Senectus et netus et malesuada. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Neque
+                    convallis a cras semper auctor. Libero id faucibus nisl tincidunt eget. Leo a diam sollicitudin
+                    tempor id. A lacus vestibulum sed arcu non odio euismod lacinia. In tellus integer feugiat
+                    scelerisque. Feugiat in fermentum posuere urna nec tincidunt praesent. Porttitor rhoncus dolor purus
+                    non enim praesent elementum facilisis. Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus.
+                    Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus.  </p>
+            </div>
+        </div>
+        <div class="col-lg3-3"></div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</div>
+</body>
+
+</html>

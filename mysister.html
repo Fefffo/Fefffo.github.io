@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="main2.css">
+  <link rel="stylesheet" href="img.css">
   <link rel="apple-touch-icon" sizes="180x180" href="images/profile/favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="images/profile/favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images/profile/favicon_io/favicon-16x16.png">
-  <style> @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@400;600;700;800&family=Roboto&display=swap');
-  </style>
-  <title>Henrik Kállai</title>
-  <style>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/profile/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/profile/favicon_io/favicon-16x16.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <title>Henrik Kállai | My sister</title>
+  <!-- <style>
     * {box-sizing: border-box;}
     
     .img-magnifier-container {
@@ -86,50 +88,81 @@
           return {x : x, y : y};
         }
       }
-      </script>
+      </script> -->
 </head>
-<body>
-    <div class="container-fluid">
-        <h1><a id="home" href="index.html">HENRIK KÁLLAI</a> ARTIST</h1>
-        <!-- <p>Resize the browser window to see the effect.</p>
-        <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p> -->
-        <div class="row">
-          <div class="col-sm-3" >
-        <!-- A vertical navbar -->
 
-    <!-- Links -->
-    <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <div class="dropdown">
-        <a class="nav-link" href="#"><button class="dropbtn">Dropdown</button></a>
+<body>
+  <div class="container-fluid">
+    <div class="topnav" id="myTopnav">
+      <a href="index2.html" class="active">Home</a>
+      <a href="paintings.html">Paintings</a>
+      <a href="drawings.html">Drawings</a>
+      <div class="dropdown">
+        <button class="dropbtn">Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
         <div class="dropdown-content">
           <a href="#">Red and black</a>
           <a href="#">Visions</a>
-          <a href="#">People</a>
+          <a href="#">Fates</a>
         </div>
       </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Drawings</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
-      </li>
-    </ul>
-  
-        </div>
-          <div class="col-sm-9 imgmain img-magnifier-container"><img id="myimage" class="img-fluid" src="images/1.jpg" alt="Card image cap">
+      <a href="contact.html">Contact</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-3 col-lg-3">
+        <a id="home1" href="index2.html">HENRIK KÁLLAI</a>
+        <!-- A vertical navbar -->
+        <!-- Links -->
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="index2.html">Home</a>
+          </li>
+          <div class="dropdown dropright">
+            <button type="button" class="dropbtn" data-toggle="dropdown">
+              Paintings<i class="fa fa-caret-right"></i>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item nav-link" href="redandblack.html">Red and black</a>
+              <a class="dropdown-item nav-link" href="#">Visions</a>
+              <a class="dropdown-item nav-link" href="#">Fates</a>
+            </div>
           </div>
+          <li class="nav-item">
+            <a class="nav-link" href="drawings.html">Drawings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="socbuttons">
+          <button class="social">
+            <a href="https://www.instagram.com/henrikkallai" style="color:black;" target="_blank">
+              <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+            </a>
+          </button>
+          <button class="social">
+            <a href="https://www.facebook.com/henrik.kallai.3" style="color:black;" target="_blank">
+              <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+            </a>
+          </button>
         </div>
       </div>
-      <script src="lib/main.js"></script>
-     
-        
+    
+      <div class="col-sm-12 col-md-9 col-lg-9 imgmain img-magnifier-container full-height"><img id="myimage" class="zoom2 full-height img-fluid"
+        src="images/red_and_black/my_sister.jpg" alt="Card image cap">
+      </div>
+      </div>
+  </div>
+  </div>
+  <script src="lib/main.js"></script>
+
+
 </body>
+
 </html>

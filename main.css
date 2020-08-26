@@ -1,0 +1,418 @@
+
+
+@font-face {
+    font-family: "SquadaOne";
+    src: url('/fonts/SquadaOne-Regular.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("/fonts/Open_Sans/OpenSans-Regular.ttf");
+  font-weight: 500;
+}
+
+html {
+ background-image: url('bckgryellow.jpg'); 
+  background-repeat: repeat-y;
+}
+
+.col-sm-3 {
+  background-color: transparent;
+}
+
+#name {
+  padding-left: 0;
+  margin-left: 0;
+  font-family: 'SquadaOne', cursive;
+  font-size: 4rem;
+  padding: 0rem !important;
+  color: rgb(155, 155, 155);
+}
+
+body {
+  background-color: transparent;
+}
+
+.nav.flex-column {
+  padding: 1rem 1rem 1rem 0rem;
+}
+
+.nav-link {
+  padding-left: 0px;
+}
+
+h1 {
+  font-family: 'SquadaOne', cursive;
+  font-size: 4rem;
+  padding: .5rem 2rem 0rem !important;
+  color: rgb(155, 155, 155);
+}
+
+@media (max-width: 768px) {
+  html {
+    background-image: none; 
+    background-repeat: repeat-x;
+  } 
+  
+  .nav-item a {
+    float: none;
+    width: 100%;
+  }
+
+  #home {
+    font-family: "SquadaOne", cursive;
+    text-decoration: none;
+    color: black;
+    font-size: 3rem !important;
+  }
+
+  h1 {
+    font-family: 'SquadaOne', cursive;
+    font-size: 4rem;
+    padding: 0rem 0rem 0rem !important;
+    color: rgb(155, 155, 155);
+  }
+
+  .nav.flex-column {
+  flex-direction: row !important;
+  display: none;
+  }
+
+  .nav {
+    display: inline-flex;
+  }
+
+  a.nav-link {
+    padding: 8px;
+  }
+
+}
+
+/* Mobile view */
+
+@media (max-width: 600px) {
+  
+  #main2 {
+    display: none;
+  }
+  .nav-item a {
+    float: none;
+    width: 100%;
+  }
+
+  #home {
+    font-family: "SquadaOne", cursive;
+    text-decoration: none;
+    color: black;
+    font-size: 3rem !important;
+    padding: 0rem 0rem 0rem 1rem !important;
+    }
+  
+
+  #name {
+  font-family: 'SquadaOne', cursive;
+  }
+
+  .col-sm-12 {
+    padding: 0px !important;
+  }
+
+  .nav.flex-column {
+  flex-direction: row !important;
+  padding: 0rem 1rem 1rem 0.5rem;
+  display: hide !important;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  a.nav-link {
+    padding: 8px;
+  }
+
+}
+
+.nav-link {
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "OpenSans";
+}
+
+.nav-link > button {
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "OpenSans";
+}
+
+.nav li a:hover {
+    color: #1abc9c !important;
+  }
+
+  .nav li a:active {
+    color: red !important;
+  }
+
+img {
+    margin-bottom: 6%;
+    padding: 0px;
+    }
+
+    
+.imgmain {
+  padding: 0px;
+  width: 100%;
+}
+
+h1 {
+    font-family: 'SquadaOne', cursive;
+    font-size: 4rem;
+    padding: .5rem 2rem;
+    color: rgb(155, 155, 155);
+}
+
+#home:hover {
+    color: #1abc9c;
+    text-decoration: none;
+    font-size: 4rem;
+}
+
+#home {
+    text-decoration: none;
+    color: black;
+    font-size: 4rem;
+    font-family: 'SquadaOne', cursive;
+    display: none;
+}
+
+#home1 {
+    text-decoration: none;
+    color: black;
+    font-size: 4rem;
+    font-family: 'SquadaOne', cursive;
+    line-height: 3.6rem;
+}
+
+#home1:hover {
+  color: #1abc9c;
+  text-decoration: none;
+  font-size: 4rem;
+}
+
+.img-fluid {
+    box-shadow:  4px 4px 3px grey;
+    max-width: 100% !important; 
+}
+
+.zoom {
+  transition: transform .1s; /* Animation */
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.zoom:hover {
+  transform: scale(1.1); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+z-index: 1;
+}
+
+#pp {
+    size: 50%;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    background-color: white;
+    padding: 0px 0px;
+    font-family: "OpenSans";
+  }
+
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: none;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: white}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: white;
+    border: none;
+  }
+
+footer {
+    position: relative;
+    padding: .5rem;
+    margin-left: 1.5rem;
+    background-color: transparent;
+    color: darkgrey;
+    font-weight: 500;
+    font-size: 10px;
+    font-family: "OpenSans";
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+  }
+
+#footer {
+  width: 100%;
+  display: block;
+}
+
+/*Mobile menu style */
+@media screen and (min-width: 768px) {
+.topnav {
+  display: none;
+ }
+
+ .container-fluid {
+  background-color: transparent;
+  padding: 3%;
+  }
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #fee16b;
+  width: 100%;
+  font-weight: 500;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #d1b546;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.icon {
+  font-size: 1.5rem !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  display: block;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
